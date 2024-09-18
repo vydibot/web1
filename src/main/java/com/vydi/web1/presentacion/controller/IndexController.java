@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class IndexController {
 
-    @RequestMapping(value = "/homeland", method = RequestMethod.GET)
+    @RequestMapping(path = "/homeland", method = RequestMethod.GET)
     public String indexController(Model model) {
         model.addAttribute("xd", "Hola");
 
